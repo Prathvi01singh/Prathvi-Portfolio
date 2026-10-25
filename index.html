@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prathvi Singh | Aspiring AI Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="siteNav" aria-label="Primary">
+    <p class="nav-brand">Prathvi Singh</p>
+    <button type="button" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="profile-photo" id="profilePhoto">
+      <!-- Add profile.jpg to the project folder to show a photo -->
+      <span class="profile-initials">PS</span>
+      <img src="profile.jpg" alt="Photo of Prathvi Singh" id="profileImage" width="148" height="148">
+    </div>
+    <p class="eyebrow">Personal Profile</p>
+    <h1>Prathvi Singh</h1>
+    <p class="tagline">Aspiring AI Engineer</p>
+  </header>
+
+  <main>
+    <section id="about" class="card fade-in">
+      <h2>About</h2>
+      <p>
+        I want to become an AI engineer and enjoy exploring how modern AI systems are built.
+        I have a strong Computer Science core and a solid understanding of large language models.
+        I like building practical projects and using Git and GitHub to manage my work.
+      </p>
+    </section>
+
+    <section id="education" class="card fade-in">
+      <h2>Education</h2>
+      <p><strong>University:</strong> JECRC University</p>
+      <p><strong>Course:</strong> B.Tech (CSE core)</p>
+      <p><strong>Year:</strong> 2nd Year</p>
+      <p><strong>Semester:</strong> 3rd Semester</p>
+      <p>Focus: AI engineering and Computer Science core.</p>
+    </section>
+
+    <section id="skills" class="card fade-in">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>AI and LLMs</h3>
+        <ul>
+          <li>LLMs (deep understanding)</li>
+          <li>RAG (Retrieval-Augmented Generation)</li>
+          <li>Databases and Vector Databases</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Backend and Tools</h3>
+        <ul>
+          <li>SQLite</li>
+          <li>FastAPI</li>
+          <li>Streamlit</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Foundations</h3>
+        <ul>
+          <li>Computer Science Core</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>My Projects</h2>
+      <div class="project-controls">
+        <label for="projectSearch">Search projects</label>
+        <input id="projectSearch" type="search" name="projectSearch" placeholder="Search by name or technology" autocomplete="off">
+        <div class="filter-buttons" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="python">Python</button>
+          <button type="button" class="filter-btn" data-filter="javascript">JavaScript</button>
+          <button type="button" class="filter-btn" data-filter="quiz">Quiz</button>
+          <button type="button" class="filter-btn" data-filter="book">Book</button>
+        </div>
+      </div>
+      <p id="noProjects" hidden>No projects found</p>
+      <div class="project-grid">
+        <article class="project-card" data-name="Python Programs Collection" data-tags="python">
+          <h3>Python Programs Collection</h3>
+          <p>Factorial, Fibonacci and structure-to-dictionary conversion programs with an updated README.</p>
+          <ul class="tag-list">
+            <li>Python</li>
+          </ul>
+          <p>
+            <a href="https://github.com/Prathvi01singh/Python-program-collection" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#python-programs-collection">View details</a>
+          </p>
+        </article>
+        <article class="project-card" data-name="Messy Python Code Improvement" data-tags="python ai">
+          <h3>Messy Python Code Improvement</h3>
+          <p>A messy Python script improved using AI assistance.</p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>AI</li>
+          </ul>
+          <p>
+            <a href="https://github.com/Prathvi01singh/Messy-Python-code-Improvement" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#messy-code-improvement">View details</a>
+          </p>
+        </article>
+        <article class="project-card" data-name="Bug Fixing Using Cursor AI" data-tags="ai">
+          <h3>Bug Fixing Using Cursor AI</h3>
+          <p>A buggy program identified and corrected using Cursor AI.</p>
+          <ul class="tag-list">
+            <li>AI</li>
+          </ul>
+          <p>
+            <a href="https://github.com/Prathvi01singh/Bug-Fixing-Cursor-AI" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#bug-fixing-cursor-ai">View details</a>
+          </p>
+        </article>
+        <article class="project-card" data-name="Interactive Quiz Application" data-tags="html css javascript quiz">
+          <h3>Interactive Quiz Application</h3>
+          <p>The quiz application built in Lecture 10.</p>
+          <ul class="tag-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Quiz</li>
+          </ul>
+          <p>
+            <a href="https://github.com/Prathvi01singh/Interactive-Quiz-Application" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#interactive-quiz">View details</a>
+          </p>
+        </article>
+        <article class="project-card" data-name="Book Reading List Application" data-tags="book">
+          <h3>Book Reading List Application</h3>
+          <p>The reading list application built in Lecture 11.</p>
+          <ul class="tag-list">
+            <li>Book</li>
+          </ul>
+          <p>
+            <a href="https://github.com/Prathvi01singh/Book-Reading-List-Application" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#book-reading-list">View details</a>
+          </p>
+        </article>
+        <article class="project-card" data-name="To-Do App" data-tags="">
+          <h3>To-Do App</h3>
+          <p>A simple task manager to add, view and complete tasks.</p>
+          <p>
+            <a href="https://github.com/Prathvi01singh/To-Do-App-Project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </p>
+        </article>
+        <article class="project-card" data-name="Weather API App" data-tags="">
+          <h3>Weather API App</h3>
+          <p>An app that fetches and displays weather data from a weather API.</p>
+          <p>
+            <a href="https://github.com/Prathvi01singh/Weather-app" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="python-programs-collection" class="card project-detail fade-in">
+      <p><a href="#projects">Back to projects</a></p>
+      <h2>Python Programs Collection</h2>
+      <h3>Overview</h3>
+      <p>Factorial, Fibonacci and structure-to-dictionary conversion programs with an updated README.</p>
+      <h3>What it does</h3>
+      <p>Factorial, Fibonacci and structure-to-dictionary conversion programs, with an updated README.</p>
+      <p>
+        <a class="action-link" href="https://github.com/Prathvi01singh/Python-program-collection" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </p>
+    </section>
+
+    <section id="messy-code-improvement" class="card project-detail fade-in">
+      <p><a href="#projects">Back to projects</a></p>
+      <h2>Messy Python Code Improvement</h2>
+      <h3>Overview</h3>
+      <p>A messy Python script improved using AI assistance.</p>
+      <h3>What it does</h3>
+      <p>Takes a messy Python script and improves its readability and structure using AI assistance.</p>
+      <p>
+        <a class="action-link" href="https://github.com/Prathvi01singh/Messy-Python-code-Improvement" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </p>
+    </section>
+
+    <section id="bug-fixing-cursor-ai" class="card project-detail fade-in">
+      <p><a href="#projects">Back to projects</a></p>
+      <h2>Bug Fixing Using Cursor AI</h2>
+      <h3>Overview</h3>
+      <p>A buggy program identified and corrected using Cursor AI.</p>
+      <h3>What it does</h3>
+      <p>An incorrect or buggy program identified and corrected using Cursor AI.</p>
+      <p>
+        <a class="action-link" href="https://github.com/Prathvi01singh/Bug-Fixing-Cursor-AI" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </p>
+    </section>
+
+    <section id="interactive-quiz" class="card project-detail fade-in">
+      <p><a href="#projects">Back to projects</a></p>
+      <h2>Interactive Quiz Application</h2>
+      <h3>Overview</h3>
+      <p>The quiz application built in Lecture 10.</p>
+      <h3>What it does</h3>
+      <p>A multiple-choice quiz with five questions, instant answer checking and a final score (built with HTML, CSS and JavaScript in Lecture 10).</p>
+      <p>
+        <a class="action-link" href="https://github.com/Prathvi01singh/Interactive-Quiz-Application" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </p>
+    </section>
+
+    <section id="book-reading-list" class="card project-detail fade-in">
+      <p><a href="#projects">Back to projects</a></p>
+      <h2>Book Reading List Application</h2>
+      <h3>Overview</h3>
+      <p>The reading list application built in Lecture 11.</p>
+      <h3>What it does</h3>
+      <p>A reading list application developed in Lecture 11.</p>
+      <p>
+        <a class="action-link" href="https://github.com/Prathvi01singh/Book-Reading-List-Application" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </p>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Let's connect</h2>
+      <div class="contact-grid">
+        <article class="contact-card">
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/Prathvi01singh" target="_blank" rel="noopener noreferrer">https://github.com/Prathvi01singh</a>
+          </p>
+        </article>
+        <article class="contact-card">
+          <h3>LinkedIn</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/prathvi-singh-731951389" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/prathvi-singh-731951389</a>
+          </p>
+        </article>
+        <article class="contact-card">
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:prathvisingh1257@gmail.com">prathvisingh1257@gmail.com</a>
+          </p>
+        </article>
+        <article class="contact-card">
+          <h3>Phone</h3>
+          <p>
+            <a href="tel:+919411628355">+91 9411628355</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Contact</h2>
+    <p>
+      GitHub:
+      <a href="https://github.com/Prathvi01singh" target="_blank" rel="noopener noreferrer">https://github.com/Prathvi01singh</a>
+    </p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/prathvi-singh-731951389" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/prathvi-singh-731951389</a>
+    </p>
+    <p>
+      Email:
+      <a href="mailto:prathvisingh1257@gmail.com">prathvisingh1257@gmail.com</a>
+    </p>
+    <p>
+      Phone:
+      <a href="tel:+919411628355">+91 9411628355</a>
+    </p>
+  </footer>
+  <button id="themeToggle" type="button">Switch to Dark Mode</button>
+  <button id="backToTop" type="button">Back to top</button>
+
+  <div id="chatWidget">
+    <button type="button" id="chatToggle" aria-label="Open Ask Prathvi's Assistant" aria-expanded="false" aria-controls="chatWindow">Chat</button>
+    <div id="chatWindow" role="dialog" aria-labelledby="chatTitle" aria-hidden="true">
+      <div class="chat-header">
+        <h2 id="chatTitle">Ask Prathvi's Assistant</h2>
+        <button type="button" id="chatClose" aria-label="Close Ask Prathvi's Assistant">Close</button>
+      </div>
+      <div id="chatMessages" role="log" aria-live="polite"></div>
+      <div class="chat-quick-replies">
+        <button type="button" class="chat-chip" data-reply="Skills">Skills</button>
+        <button type="button" class="chat-chip" data-reply="Projects">Projects</button>
+        <button type="button" class="chat-chip" data-reply="GitHub">GitHub</button>
+        <button type="button" class="chat-chip" data-reply="Contact">Contact</button>
+      </div>
+      <form id="chatForm">
+        <label for="chatInput">Message</label>
+        <div class="chat-compose">
+          <input id="chatInput" type="text" name="chatInput" autocomplete="off" aria-label="Type a message to Ask Prathvi's Assistant">
+          <button type="submit" id="chatSend">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
